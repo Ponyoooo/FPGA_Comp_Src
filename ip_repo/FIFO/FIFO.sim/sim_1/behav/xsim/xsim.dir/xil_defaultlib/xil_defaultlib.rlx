@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Doc/Vivado2019_1/FIFO/FIFO.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Doc/Vivado2019_1/FIFO/FIFO.srcs/sim_1/new/fifo_test.v,1600484031,verilog,,,,fifo_test,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Doc/Vivado2019_1/FIFO/FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1600397428,verilog,,D:/Doc/Vivado2019_1/FIFO/FIFO.srcs/sources_1/new/fifo_16_1024.v,,clk_wiz_0,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Doc/Vivado2019_1/FIFO/FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1600397428,verilog,,D:/Doc/Vivado2019_1/FIFO/FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Doc/Vivado2019_1/FIFO/FIFO.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,1600398521,verilog,,D:/Doc/Vivado2019_1/FIFO/FIFO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,fifo_generator_0,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Doc/Vivado2019_1/FIFO/FIFO.srcs/sources_1/new/fifo_16_1024.v,1600503249,verilog,,D:/Doc/Vivado2019_1/FIFO/FIFO.srcs/sim_1/new/fifo_test.v,,fifo_16_1024,,,../../../../FIFO.srcs/sources_1/ip/clk_wiz_0,,,,,

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Fri Sep 25 21:39:10 2020
+# Process ID: 13960
+# Current directory: D:/Doc/Vivado2019_1/ALINX_AXI_WITH_FIFO/ALINX_AXI_WITH_FIFO.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/Doc/Vivado2019_1/ALINX_AXI_WITH_FIFO/ALINX_AXI_WITH_FIFO.sdk/webtalk/webtalk.log
+# Journal file: D:/Doc/Vivado2019_1/ALINX_AXI_WITH_FIFO/ALINX_AXI_WITH_FIFO.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

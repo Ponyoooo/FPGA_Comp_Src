@@ -22,22 +22,24 @@
 
 module fifo_16_1024
     (
-    input wire clk_65m,//FIFOĞ´Ê±ÖÓÊäÈë
-    input wire clk_100m,//FIFO¶ÁÊ±ÖÓÊäÈë
-    input rstn_i,//¸´Î»ĞÅºÅÊäÈë
-    input wire wr_start,//fifoĞ´Ê¹ÄÜĞÅºÅ,Ò»¸ö°´¼ü£¬ÉÏÉıÑØÓĞĞ§
-    output wire rd_en,//Êä³ö¶ÁÊ¹ÄÜĞÅºÅ£¬ÓÃÓÚºÍPSÍ¨ĞÅ£¬½«Êı¾İ½»¸øDDR
-    input [11:0] Din,//ADÊäÈë
-    output wire [15:0] dout//FIFOÊä³ö
+    input wire clk_65m,//FIFOĞ´Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    input wire clk_100m,//FIFOï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    input rstn_i,//ï¿½ï¿½Î»ï¿½Åºï¿½ï¿½ï¿½ï¿½ï¿½
+    input wire wr_start,//fifoĞ´Ê¹ï¿½ï¿½ï¿½Åºï¿½,Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ§
+    output reg rd_en,//ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ÅºÅ£ï¿½ï¿½ï¿½ï¿½Úºï¿½PSÍ¨ï¿½Å£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ½ï¿½ï¿½ï¿½DDR
+    input [11:0] Din,//ADï¿½ï¿½ï¿½ï¿½
+    output wire [15:0] dout//FIFOï¿½ï¿½ï¿½
     );
     
+    //å°†12ä½è¾“å…¥æ‰©å±•16ä½
     reg [15:0] din = 'b0;
     
     always@(posedge clk_65m)
     begin
         din[11:0]<=Din;
     end
-    
+    //
+
     wire full;
     wire empty;
     wire almost_full;
@@ -45,32 +47,24 @@ module fifo_16_1024
     wire [9:0] rd_data_count;
     wire [9:0] wr_data_count;
     
-    wire wr_en;//Ğ´Ê¹ÄÜĞÅºÅ
-    assign wr_en = init_wr_pulse||wr_status[0];
-    assign rd_en = init_rd_pulse||rd_status[0];
-    
     wire init_wr_pulse;
-    wire init_rd_pulse;
+
+    wire wr_en;//Ğ´Ê¹ï¿½ï¿½ï¿½Åºï¿½
+    assign wr_en = init_wr_pulse||wr_status[0];
     
     reg init_wr_ff;
     reg init_wr_ff2;
-    reg init_rd_ff;
-    reg init_rd_ff2;
     
-    reg rd_start_reg = 0;
-    wire rd_start;
-    assign rd_start = rd_start_reg;
+    reg [1:0] wr_status = 0;//Ğ´×´Ì¬ï¿½ï¿½
+    reg [1:0] rd_status = 0;//ï¿½ï¿½×´Ì¬ï¿½ï¿½
     
-    reg [1:0] wr_status = 0;//Ğ´×´Ì¬»ú
-    reg [1:0] rd_status = 0;//¶Á×´Ì¬»ú
+    parameter wr_wait = 0;//ï¿½È´ï¿½Ğ´×´Ì¬
+    parameter wr_ing  = 1;//ï¿½ï¿½ï¿½ï¿½Ğ´×´Ì¬
+    parameter wr_done = 2;//Ğ´ï¿½ï¿½ï¿½×´Ì¬
     
-    parameter wr_wait = 0;//µÈ´ıĞ´×´Ì¬
-    parameter wr_ing  = 1;//ÕıÔÚĞ´×´Ì¬
-    parameter wr_done = 2;//Ğ´Íê³É×´Ì¬
-    
-    parameter rd_wait = 0;//µÈ´ı¶Á×´Ì¬
-    parameter rd_ing  = 1;//ÕıÔÚ¶Á×´Ì¬
-    parameter rd_done = 2;//¶ÁÍê³É×´Ì¬
+    parameter rd_wait = 0;//ï¿½È´ï¿½ï¿½ï¿½×´Ì¬
+    parameter rd_ing  = 1;//ï¿½ï¿½ï¿½Ú¶ï¿½×´Ì¬
+    parameter rd_done = 2;//ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
 
 	assign init_wr_pulse = init_wr_ff && (!init_wr_ff2);
 	//Generate a pulse to initiate write.
@@ -88,30 +82,23 @@ module fifo_16_1024
 	        init_wr_ff2 <= init_wr_ff;                                                                 
 	      end                                                                      
 	  end
-	  
-	assign init_rd_pulse = init_rd_ff && (!init_rd_ff2);
-	//Generate a pulse to initiate read.
-	always @(posedge clk_100m)										      
-	  begin                                                                        
-	    // Initiates AXI transaction delay    
-	    if (rstn_i == 1 )                                                   
-	      begin                                                                    
-	        init_rd_ff <= 1'b0;                                                   
-	        init_rd_ff2 <= 1'b0;                                                   
-	      end                                                                               
-	    else                                                                       
-	      begin  
-	        init_rd_ff <= rd_start;
-	        init_rd_ff2 <= init_rd_ff;                                                                 
-	      end                                                                      
-	  end
+
+    //åœ¨fullå’Œemptyçš„æ ‡å¿—ä½ä¸Šå‡æ²¿è§¦å‘
+    //fullä¸ºé«˜ï¼Œåˆ™å¼€å§‹è¯»ï¼Œemptyä¸ºé«˜åˆ™åœæ­¢è¯»
+    always@(posedge full or posedge empty)
+    begin
+      if(full==1)
+        rd_en<=1;
+      else
+        rd_en<=0;
+    end
     
-    //Ğ´Ê¹ÄÜĞÅºÅ¿ØÖÆ£¬ÓÉĞ´Ê¹ÄÜÂö³åÖÃ¸ß£¬fifo fullĞÅºÅÖÃµÍ
+    //Ğ´Ê¹ï¿½ï¿½ï¿½ÅºÅ¿ï¿½ï¿½Æ£ï¿½ï¿½ï¿½Ğ´Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ß£ï¿½fifo fullï¿½Åºï¿½ï¿½Ãµï¿½
     
-    //Ğ´fifo×´Ì¬»ú
+    //Ğ´fifo×´Ì¬ï¿½ï¿½
     always@(posedge clk_65m or posedge rstn_i)
     begin
-        //¸´Î»ĞÅºÅ£¬×´Ì¬»úÖÃµÈ´ı
+        //ï¿½ï¿½Î»ï¿½ÅºÅ£ï¿½×´Ì¬ï¿½ï¿½ï¿½ÃµÈ´ï¿½
         if(rstn_i==1)
         begin
             wr_status<=wr_wait;
@@ -120,7 +107,7 @@ module fifo_16_1024
         begin
             case(wr_status)
             
-            //Ğ´µÈ´ı×´Ì¬£¬¼ì²éĞ´Ê¹ÄÜĞÅºÅÊÇ·ñÎª1
+            //Ğ´ï¿½È´ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´Ê¹ï¿½ï¿½ï¿½Åºï¿½ï¿½Ç·ï¿½Îª1
             wr_wait:
             begin
                 if(wr_en==1)
@@ -130,7 +117,7 @@ module fifo_16_1024
                 rd_start_reg<=0;
             end
             
-            //Ğ´½øĞĞĞÅºÅ£¬¼ì²éĞ´Âú
+            //Ğ´ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÅ£ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½
             wr_ing:
             begin
                 if(full==1)
@@ -140,7 +127,7 @@ module fifo_16_1024
                 rd_start_reg<=0;
             end
             
-            //Ğ´Íê³ÉĞÅºÅ£¬¸øÒ»¸ö¶Á¿ªÊ¼ĞÅºÅÂö³å
+            //Ğ´ï¿½ï¿½ï¿½ï¿½ÅºÅ£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½Åºï¿½ï¿½ï¿½ï¿½ï¿½
             wr_done:
             begin
                 if(rd_start==0)
@@ -155,10 +142,10 @@ module fifo_16_1024
         end
     end
     
-    //¶ÁÊ¹ÄÜĞÅºÅ¿ØÖÆ£¬ÓÉ¶ÁÊ¹ÄÜÂö³åÖÃ¸ß£¬fifo emptyĞÅºÅÖÃµÍ
+    //ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ÅºÅ¿ï¿½ï¿½Æ£ï¿½ï¿½É¶ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ß£ï¿½fifo emptyï¿½Åºï¿½ï¿½Ãµï¿½
     
     
-    //¶Áfifo×´Ì¬»ú
+    //ï¿½ï¿½fifo×´Ì¬ï¿½ï¿½
     always@(posedge clk_100m or posedge rstn_i)
     begin
         if(rstn_i==1)

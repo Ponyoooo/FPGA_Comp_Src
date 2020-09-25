@@ -1,0 +1,50 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1240 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1240 -y 80 -defaultsOSRD
+preplace port done -pg 1 -lvl 4 -x 1240 -y 380 -defaultsOSRD
+preplace port error -pg 1 -lvl 4 -x 1240 -y 400 -defaultsOSRD
+preplace port wr_start -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
+preplace portBus adc_ch1_clk -pg 1 -lvl 4 -x 1240 -y 520 -defaultsOSRD
+preplace portBus adc_ch0_clk -pg 1 -lvl 4 -x 1240 -y 500 -defaultsOSRD
+preplace portBus adc_ch1_data -pg 1 -lvl 0 -x 0 -y 570 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 970 -y 100 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 550 -y 300 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 110 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 200 -y 410 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 1 -x 200 -y 510 -defaultsOSRD
+preplace inst util_vector_logic_2 -pg 1 -lvl 3 -x 970 -y 520 -defaultsOSRD
+preplace inst util_vector_logic_3 -pg 1 -lvl 1 -x 200 -y 310 -defaultsOSRD
+preplace inst AXI_FIFOIN_0 -pg 1 -lvl 3 -x 970 -y 370 -defaultsOSRD
+preplace inst fifo_16_1024_0 -pg 1 -lvl 2 -x 550 -y 500 -defaultsOSRD
+preplace netloc fifo_16_1024_0_dout 1 2 1 700 340n
+preplace netloc fifo_16_1024_0_rd_en 1 2 1 710 400n
+preplace netloc AXI_FIFOIN_0_m00_axi_txn_done 1 3 1 NJ 380
+preplace netloc AXI_FIFOIN_0_m00_axi_error 1 3 1 NJ 400
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 410 390 690 460 1220
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 30 210 380J 200 NJ 200 1200
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 390 380 N
+preplace netloc util_vector_logic_0_Res 1 1 1 370J 410n
+preplace netloc rst_1 1 0 1 NJ 410
+preplace netloc wr_start_1 1 0 1 NJ 510
+preplace netloc util_vector_logic_1_Res 1 1 1 NJ 510
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 4 20 220 400 210 710 210 1210
+preplace netloc util_vector_logic_3_Res 1 1 1 380J 310n
+preplace netloc util_vector_logic_2_Res 1 3 1 1210J 500n
+preplace netloc AXI_FIFOIN_0_WNEXT 1 1 3 410 610 NJ 610 1200
+preplace netloc Din_0_1 1 0 2 NJ 570 380J
+preplace netloc processing_system7_0_DDR 1 3 1 NJ 60
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 NJ 80
+preplace netloc AXI_FIFOIN_0_M00_AXI 1 1 3 410 220 NJ 220 1200
+preplace netloc axi_smc_M00_AXI 1 2 1 700 100n
+levelinfo -pg 1 0 200 550 970 1240
+pagesize -pg 1 -db -bbox -sgen -110 0 1400 620
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_ps7_cnt":"1"
+}

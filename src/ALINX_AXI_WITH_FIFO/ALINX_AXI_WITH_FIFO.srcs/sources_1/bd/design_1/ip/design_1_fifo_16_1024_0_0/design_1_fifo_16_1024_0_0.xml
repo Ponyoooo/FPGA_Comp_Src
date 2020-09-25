@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_fifo_16_1024_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>fifo_16_1024</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Sep 25 12:52:48 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:6c4e9609</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:6c4e9609</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_fifo_16_1024_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Sep 25 12:52:48 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:6c4e9609</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>fifo_16_1024</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Sep 25 12:52:48 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:aa361c78</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_fifo_16_1024_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Sep 25 12:52:48 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:aa361c78</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Sep 25 12:54:13 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:6c4e9609</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk_65m</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>clk_100m</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rstn_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>wr_start</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rd_en</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="32">0x00000000</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Din</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dout</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>burst_delay_flag</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>wr_wait</spirit:name>
+        <spirit:displayName>Wr Wait</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.wr_wait">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>wr_ing</spirit:name>
+        <spirit:displayName>Wr Ing</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.wr_ing">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>wr_done</spirit:name>
+        <spirit:displayName>Wr Done</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.wr_done">2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>rd_wait</spirit:name>
+        <spirit:displayName>Rd Wait</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.rd_wait">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>rd_ing</spirit:name>
+        <spirit:displayName>Rd Ing</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.rd_ing">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>rd_done</spirit:name>
+        <spirit:displayName>Rd Done</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.rd_done">2</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sources_1/ip/fifo_generator_0/fifo_generator_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1628/sources_1/new/fifo_16_1024.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_fifo_16_1024_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sources_1/ip/fifo_generator_0/fifo_generator_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1628/sources_1/new/fifo_16_1024.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_fifo_16_1024_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_1_fifo_16_1024_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_fifo_16_1024_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_fifo_16_1024_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_fifo_16_1024_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_fifo_16_1024_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>fifo_16_1024_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>wr_wait</spirit:name>
+      <spirit:displayName>Wr Wait</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.wr_wait">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>wr_ing</spirit:name>
+      <spirit:displayName>Wr Ing</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.wr_ing">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>wr_done</spirit:name>
+      <spirit:displayName>Wr Done</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.wr_done">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>rd_wait</spirit:name>
+      <spirit:displayName>Rd Wait</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.rd_wait">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>rd_ing</spirit:name>
+      <spirit:displayName>Rd Ing</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.rd_ing">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>rd_done</spirit:name>
+      <spirit:displayName>Rd Done</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.rd_done">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_fifo_16_1024_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>fifo_16_1024_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>16</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a1a51d8_ARCHIVE_LOCATION">d:/doc/vivado2019_1/fifo/fifo.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d9bf65d_ARCHIVE_LOCATION">d:/doc/vivado2019_1/fifo/fifo.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e176dd2_ARCHIVE_LOCATION">d:/doc/vivado2019_1/fifo/fifo.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b24a1d1_ARCHIVE_LOCATION">d:/doc/vivado2019_1/fifo/fifo.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6030bae5_ARCHIVE_LOCATION">d:/doc/vivado2019_1/fifo/fifo.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@376b48fa_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fdf28da_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@689d42bd_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42a4127c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bc67c6f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d8673cc_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@102088ac_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dfe19be_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5054ce7b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f8177c4_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f69124c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cd869e9_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10e33ef0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75377723_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7332d077_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f68016e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46da55e8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9637635_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a98aeb5_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@596b1526_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75c90196_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b6b209_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56f338ae_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16b01787_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3897278b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12ff1a87_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66073570_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39338122_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@368a5e8a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@232644cb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48c519bb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20d64534_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@763610c3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a3d1be4_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a0dfeb9_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2be8fc19_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@223951e8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@433725aa_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dc15c59_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@347c5b5b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d466834_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68d42856_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46308533_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c2eceb7_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7994d738_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7be8c310_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7778e183_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bd2dc21_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4da2dd7d_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66db13a0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@526252ac_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ef34c3e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e006005_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2649c4b1_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2410e5d2_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55561b0f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46969142_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53664ed8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ad3c98f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f83db6c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12770e2e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c407296_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49918d05_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bb6366d_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@672a85b0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56bcd456_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@525dbc38_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@580ee518_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dd5baa0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@372f4cd8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@408770ad_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9211384_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25272bd9_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6611f12_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15ee7481_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34cf14a0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f2ae2b5_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a17ea5b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d7ce9f7_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7164dfcb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30951460_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6637f206_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7007a5a1_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2307c471_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f50d89e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d645908_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5506440f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7562cc7c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a1c96e3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@84d15e4_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ccf8c4_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a757eaf_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64ba9992_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2891995d_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72be0e4f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@518abdff_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c1a826b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4eaa7020_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c77eae8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20da727b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c463bc6_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b1aed43_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@779ce68e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1791906c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77db22a0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b8ee387_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34a56c50_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15b320e6_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@200390f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e651a96_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79bc5b3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43492581_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68649ded_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1412be7f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e99afa6_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e6b5582_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aa99018_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26f802c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f44c7a8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5237dfb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b9815e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b6dbd8e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@580e6852_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5966bafb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20a5ce1f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ef93f21_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ebcc511_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@412f7e78_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1456393f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bafbbf2_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16b597f5_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7de5d4c2_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ecc5da3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@715dd866_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f4f6baa_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e2d9131_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e8c5b81_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47e0518c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f82f48c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@720322f7_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e24c38_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@174072c9_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@337f484_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@576846cb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c3276ed_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c05eb63_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1189a0d6_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@680ade7b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30c8ccdb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71f64709_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c994434_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bab579f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46e562f0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31f08c34_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7118f501_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@775c88a0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b6d6a8b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fee710e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13e067b0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bf0b27e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e2c747e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59ac5c1_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9100038_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33d002c2_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ef685b3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c27492_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71b9aca4_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@177c4075_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e2a40b1_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a29139a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eaa8372_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dd4527_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29520c6f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c1f3315_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e53c4a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c3abacf_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6643d602_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b58cff7_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55d77cb8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@524d1ada_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42d8787a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6261edb2_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@667d2eb1_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68183ec9_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65521ec0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@108a5a55_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58586601_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a2148f7_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@341bb322_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dcee32b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6896f24f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76a613a1_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@125bd487_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ec6edca_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77fc746f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22929d01_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ae0454_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@799e0aaa_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47ef1808_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a0c8bd0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2940308_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e84076a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37dca738_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79bbb030_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@97eab04_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c24f91f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b2a0aa0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@177f15c1_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5108f5d3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f650dfa_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@392aaa38_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@217abea7_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@98ecef0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4387eda_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7988f91c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12e76440_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6794f118_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d035db1_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1502afbd_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67095a93_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73696cca_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45a0fe10_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ceed39b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ab91cdf_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10cd34f8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@497aa786_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44526023_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d469e6e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ea43e98_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c2733a8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c727715_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f2ec6c3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42d0cab2_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36fa95a9_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@435dbb70_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d276f17_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3182daad_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a796ff3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4492d53_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4635a14e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26485764_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/FIFO/FIFO.srcs</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c53046a2"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="615e6ac7"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="efe89c92"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="266fa147"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
