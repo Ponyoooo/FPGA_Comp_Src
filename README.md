@@ -18,7 +18,7 @@
 
 The Sample code is based on two self-made ip:fifo and an AXI-FULL bus, as below shownd.
 
-![](D:\Pic\Camera Roll\QQ20200926093952.png)
+![QQ20200926093952](D:\Desktop\FPGA_Comp_Src\pic\QQ20200926093952.png)
 
 ​	This module can sample 4096(changeable) points continuously then send these data to DDR3 linked with PS through an AXI-FULL bus.
 
@@ -66,7 +66,7 @@ Input data from 12bit ADC.
 
 AXI_FIFOIN's burst length is 256, there are clock delay between two bursts, if not coordinate read fifo process and AXI transmit process, there will be some data lost like below.
 
-<img src="D:\Pic\Camera Roll\IMG_20200925_104531.jpg" style="zoom: 25%;" />
+<img src="D:\Desktop\FPGA_Comp_Src\pic\IMG_20200925_104531.jpg" alt="IMG_20200925_104531" style="zoom:50%;" />
 
 The blue one is 64 bursts and every burst send 16 datas. The orange one is 4 bursts and every burst send 256 datas. It's clearly that there are data lost between two burst. The interrelated code showed as below.
 
@@ -98,7 +98,7 @@ end
 
 Considering that during the shake hands period between master and slave, the **VALID** and **READY** are high level. 
 
-<img src="D:\Pic\Camera Roll\QQ20200926130831.png" style="zoom:50%;" />
+<img src="D:\Desktop\FPGA_Comp_Src\pic\QQ20200926130831.png" alt="QQ20200926130831" style="zoom:50%;" />
 
 So we use these two signal to control fifo's read period. The interrelated code showed as below.
 
