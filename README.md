@@ -18,7 +18,7 @@
 
 The Sample code is based on two self-made ip:fifo and an AXI-FULL bus, as below shownd.
 
-![](D:\Pic\Camera Roll\QQ截图20200926093952.png)
+![](D:\Pic\Camera Roll\QQ20200926093952.png)
 
 ​	This module can sample 4096(changeable) points continuously then send these data to DDR3 linked with PS through an AXI-FULL bus.
 
@@ -98,7 +98,7 @@ end
 
 Considering that during the shake hands period between master and slave, the **VALID** and **READY** are high level. 
 
-<img src="D:\Pic\Camera Roll\QQ截图20200926130831.png" style="zoom:50%;" />
+<img src="D:\Pic\Camera Roll\QQ20200926130831.png" style="zoom:50%;" />
 
 So we use these two signal to control fifo's read period. The interrelated code showed as below.
 
